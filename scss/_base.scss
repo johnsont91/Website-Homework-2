@@ -5,7 +5,7 @@ Base Rules
 //font-family: 'Lusitana', serif;
 //font-family: 'Anton', sans-serif;
 body {
-    background-image: url('img/back.jpg');
+    background-image: url('/img/back.jpg');
     color: $color;
     @include body-font-regular;
     font-size: 20px;
@@ -16,9 +16,7 @@ body {
     max-width: 550px;
     width: 100%;
 }
-back {
-    margin-top: -1830px;
-}
+
 h1, h2, h3, h4, h5, h6 {
     @include headline-font;
     line-height: 1;
@@ -74,6 +72,15 @@ nav ul li:last-of-type {
 //p:first-child {
 //    @include fontSize(26px);   
 //}
+a {
+    color: $color;
+    transition: color 300ms linear;
+}
+
+a:hover {
+    color: lighten($color,40%);
+    transition: color 350ms linear;
+}
 
 h1 + p {
     @include fontSize(26px);   
