@@ -5,6 +5,7 @@ Base Rules
 //font-family: 'Lusitana', serif;
 //font-family: 'Anton', sans-serif;
 body {
+    background-image: url('img/back.jpg');
     color: $color;
     @include body-font-regular;
     font-size: 20px;
@@ -15,16 +16,54 @@ body {
     max-width: 550px;
     width: 100%;
 }
-
+back {
+    margin-top: -1830px;
+}
 h1, h2, h3, h4, h5, h6 {
     @include headline-font;
     line-height: 1;
+    text-align: center;
 }
 
 h1 {
+    padding: 50px;
     @include fontSize(60px);
     margin-bottom: 80px;
     text-transform: capitalize;
+    
+}
+header {
+     position: fixed;
+    margin-top: -50px;
+    float: none;
+}
+nav {
+    //border: 1px solid grey;
+    //border-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: none;
+    position: fixed;
+    background-color: #fff;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    @include headline-font;
+    display: inline-block;  
+    padding: 0 5px 0 5px;
+    margin: 0 6px 0 0;
+}
+
+nav ul li:last-of-type {
+    margin-right: 0;   
     
 }
 
