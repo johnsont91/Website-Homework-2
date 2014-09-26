@@ -5,7 +5,7 @@ Base Rules
 //font-family: 'Lusitana', serif;
 //font-family: 'Anton', sans-serif;
 body {
-    background-image: url('/img/back.jpg');
+    background: url('../img/back.jpg') no-repeat center;
     color: $color;
     @include body-font-regular;
     font-size: 20px;
